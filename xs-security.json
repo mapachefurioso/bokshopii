@@ -1,0 +1,21 @@
+{
+  "xsappname": "bokshopii",
+  "tenant-mode": "dedicated",
+  "scopes": [
+       {
+      "name": "$XSAPPNAME.admin2",
+      "description": "admin2"
+    }
+  ],
+  "attributes": [],
+  "role-templates": [
+       {
+      "name": "admin2",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.admin2"
+      ],
+      "attribute-references": []
+    }
+  ]
+}

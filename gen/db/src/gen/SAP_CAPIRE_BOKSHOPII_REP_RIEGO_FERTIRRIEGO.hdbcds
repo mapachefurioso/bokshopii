@@ -1,0 +1,5 @@
+entity SAP_CAPIRE_BOKSHOPII_REP_RIEGO_FERTIRRIEGO {
+  EJERCICIO : String(4);
+  PERIODO : String(2);
+  SEMANA : String(2);
+};

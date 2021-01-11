@@ -1,0 +1,60 @@
+{
+  "namespace": "sap.capire.bokshopii",
+  "definitions": {
+    "pruebaService": {
+      "@source": "srv/prueba-service.cds",
+      "kind": "service",
+      "@requires": "authenticated-user"
+    },
+    "pruebaService.REP_RIEGO_FERTIRRIEGO": {
+      "kind": "entity",
+      "@readonly": true,
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "sap.capire.bokshopii.REP_RIEGO_FERTIRRIEGO"
+            ]
+          }
+        }
+      },
+      "elements": {
+        "EJERCICIO": {
+          "type": "cds.String",
+          "length": 4
+        },
+        "PERIODO": {
+          "type": "cds.String",
+          "length": 2
+        },
+        "SEMANA": {
+          "type": "cds.String",
+          "length": 2
+        }
+      },
+      "$syntax": "projection"
+    },
+    "sap.capire.bokshopii.REP_RIEGO_FERTIRRIEGO": {
+      "kind": "entity",
+      "elements": {
+        "EJERCICIO": {
+          "type": "cds.String",
+          "length": 4
+        },
+        "PERIODO": {
+          "type": "cds.String",
+          "length": 2
+        },
+        "SEMANA": {
+          "type": "cds.String",
+          "length": 2
+        }
+      }
+    }
+  },
+  "meta": {
+    "flavor": "inferred",
+    "creator": "CDS Compiler v1.46.6"
+  },
+  "$version": "1.0"
+}
